@@ -227,7 +227,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Jailbreak Help rc4 beta 1"
+        Me.Text = "Jailbreak Help rc4 beta 2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

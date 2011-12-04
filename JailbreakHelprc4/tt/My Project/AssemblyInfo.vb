@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("tt")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("tt")> 
+<Assembly: AssemblyTitle("Jailbreak Help rc4")> 
+<Assembly: AssemblyDescription("Help's you Jailbreak!")> 
+<Assembly: AssemblyCompany("The Private Dev Team")> 
+<Assembly: AssemblyProduct("Jailbreak Help rc 4 beta 1")> 
 <Assembly: AssemblyCopyright("Copyright ©  2011")> 
 <Assembly: AssemblyTrademark("")> 
 

@@ -42,6 +42,7 @@
             iPhonev = "iPhone 4s"
             ComboBox3.Items.Insert(0, "5.0")
             ComboBox3.Items.Insert(1, "5.0.1")
+            ComboBox3.Items.Insert(2, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPhone" And ComboBox2.Text = "iPhone 4" Then
             iPhonev = ComboBox2.Text
@@ -53,6 +54,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPhone" And ComboBox2.Text = "iPhone 3gs" Then
             iPhonev = ComboBox2.Text
@@ -64,6 +66,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPod touch" And ComboBox2.Text = "iPod touch 3g" Then
             iPhonev = ComboBox2.Text
@@ -75,6 +78,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPod touch" And ComboBox2.Text = "iPod touch 4" Then
             iPhonev = ComboBox2.Text
@@ -86,6 +90,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPad" And ComboBox2.Text = "iPad 2g" Then
             iPhonev = ComboBox2.Text
@@ -97,6 +102,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPad" And ComboBox2.Text = "iPad 1g" Then
             iPhonev = ComboBox2.Text
@@ -108,6 +114,7 @@
             ComboBox3.Items.Insert(5, "4.3.5")
             ComboBox3.Items.Insert(6, "5.0")
             ComboBox3.Items.Insert(7, "5.0.1")
+            ComboBox3.Items.Insert(8, "5.1")
             ComboBox3.Visible = True
         ElseIf ComboBox1.Text = "iPhone" And ComboBox2.Text = "iPhone 3g" Then
             iPhonev = ComboBox2.Text

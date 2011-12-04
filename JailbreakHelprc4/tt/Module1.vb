@@ -78,12 +78,29 @@
         Form2.Button2.Enabled = True
         Form2.Button3.Enabled = True
     End Sub
-    'how to jailbreak!
+    'How to jailbreak!
     Public Sub ipt3(ByVal fwv As String)
         If fwv = "5.0.1" Then
             tether = True
             Form3.Show()
         ElseIf fwv = "5.0" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.1" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3" Then
+            freezeme.Show()
+        ElseIf fwv = "5.1" Then
             tether = True
             Form3.Show()
         Else
@@ -95,6 +112,23 @@
             tether = True
             Form3.Show()
         ElseIf fwv = "5.0" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.1" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3" Then
+            freezeme.Show()
+        ElseIf fwv = "5.1" Then
             tether = True
             Form3.Show()
         Else
@@ -132,16 +166,57 @@
         ElseIf fwv = "5.0" Then
             tether = True
             Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.1" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3" Then
+            freezeme.Show()
+        ElseIf fwv = "5.1" Then
+            tether = True
+            Form3.Show()
         Else
             MessageBox.Show("Unsupported firmware, will be supported soon!")
         End If
     End Sub
     Public Sub ip2(ByVal fwv As String)
         If fwv = "5.0.1" Then
+            tether = False
             Form3.Show()
         ElseIf fwv = "5.0" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "4.3.1" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "4.3" Then
+            'There was a leaked version of comex's jailbreakme that supposedly jailbroke this firmware... I still have that pdf
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "5.1" Then
+            tether = False
             Form3.Show()
         Else
+            'Should not happen, all current firmwares are supported
             MessageBox.Show("Unsupported firmware, will be supported soon!")
         End If
     End Sub
@@ -166,6 +241,23 @@
         ElseIf fwv = "5.0" Then
             tether = True
             Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.1" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3" Then
+            freezeme.Show()
+        ElseIf fwv = "5.1" Then
+            tether = True
+            Form3.Show()
         Else
             MessageBox.Show("Unsupported firmware, will be supported soon!")
         End If
@@ -177,16 +269,39 @@
         ElseIf fwv = "5.0" Then
             tether = True
             Form3.Show()
+        ElseIf fwv = "4.3.5" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.4" Then
+            tether = True
+            Form3.Show()
+        ElseIf fwv = "4.3.3" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.2" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3.1" Then
+            freezeme.Show()
+        ElseIf fwv = "4.3" Then
+            freezeme.Show()
+        ElseIf fwv = "5.1" Then
+            tether = True
+            Form3.Show()
         Else
             MessageBox.Show("Unsupported firmware, will be supported soon!")
         End If
     End Sub
     Public Sub iph4s(ByVal fwv As String)
         If fwv = "5.0.1" Then
+            tether = False
             Form3.Show()
         ElseIf fwv = "5.0" Then
+            tether = False
+            Form3.Show()
+        ElseIf fwv = "5.1" Then
+            tether = False
             Form3.Show()
         Else
+            'Should not happen, all current firmwares are supported
             MessageBox.Show("Unsupported firmware, will be supported soon!")
         End If
     End Sub

@@ -37,27 +37,10 @@
                 itunesexists = True
             End If
         Else
-            bits = "x846"
+            bits = "x86"
             If System.IO.Directory.Exists("C:\Program Files (x86)\iTunes") Then
                 itunesexists = True
             End If
-        End If
-        'Temporary path
-        Dim temp As String
-        temp = My.Computer.FileSystem.SpecialDirectories.Temp
-        'Place where I'm going to store all of the necessary files
-        mode = temp & "\The Private Dev Team\mode"
-        'make sure directory doesn't already exist
-        System.IO.Directory.CreateDirectory(temp & "\The Private Dev Team")
-        System.IO.Directory.CreateDirectory(temp & "\The Private Dev Team\mode")
-        System.IO.File.WriteAllBytes(mode & "\itunnel.exe", My.Resources.itunnel_mux_r61)
-        System.IO.File.WriteAllBytes("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iPHUCWIN32.exe", My.Resources.IPHUCWIN32)
-        System.IO.File.WriteAllBytes("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\readline5.dll", My.Resources.readline5)
-        If System.IO.File.Exists("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll") Then
-            System.IO.File.Delete("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
-            System.IO.File.Copy("C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\iTunesMobileDevice.dll", "C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
-        Else
-            System.IO.File.Copy("C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\iTunesMobileDevice.dll", "C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
         End If
     End Sub
 

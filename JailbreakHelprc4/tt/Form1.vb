@@ -11,6 +11,23 @@ Public Class Form1
         Label9.Text = ""
         Button2.Enabled = False
         RadioButton1.Checked = True
+        'Temporary path
+        Dim temp As String
+        temp = My.Computer.FileSystem.SpecialDirectories.Temp
+        'Place where I'm going to store all of the necessary files
+        mode = temp & "\The Private Dev Team\mode"
+        'make sure directory doesn't already exist
+        System.IO.Directory.CreateDirectory(temp & "\The Private Dev Team")
+        System.IO.Directory.CreateDirectory(temp & "\The Private Dev Team\mode")
+        System.IO.File.WriteAllBytes(mode & "\itunnel.exe", My.Resources.itunnel_mux_r61)
+        System.IO.File.WriteAllBytes("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iPHUCWIN32.exe", My.Resources.IPHUCWIN32)
+        System.IO.File.WriteAllBytes("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\readline5.dll", My.Resources.readline5)
+        If System.IO.File.Exists("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll") Then
+            System.IO.File.Delete("C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
+            System.IO.File.Copy("C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\iTunesMobileDevice.dll", "C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
+        Else
+            System.IO.File.Copy("C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\iTunesMobileDevice.dll", "C:\Program Files (x86)\Common Files\Apple\Apple Application Support\iTunesMobileDevice.dll")
+        End If
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -62,7 +79,7 @@ Public Class Form1
                 iPhonev = "iPhone 3g"
                 extra = "At&t"
             ElseIf iphone.DeviceProductType = "iPhone2,1" Then
-                iPhonev = "iPhone 3gs "
+                iPhonev = "iPhone 3gs"
                 extra = "At&t"
             ElseIf iphone.DeviceProductType = "iPhone3,3" Then
                 iPhonev = "iPhone 4"
